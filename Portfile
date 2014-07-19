@@ -12,6 +12,9 @@ maintainers         flashbit.net:ain
 description         Snail.io
 long_description    Snail.io is a library for slowing down I/O system calls
 homepage            https://github.com/ain/libsnailio
-master_sites        https://github.com/ain/libsnailio/releases
-checksums           sha256 91e453e3bc533a9559bd7dd43904eef26ff64e51cd32e5f05a91a2fb379840b5 \
-                    rmd160 51d726b7c7b53cfcc7a741714ad69d2ffc614b07
+
+fetch.type          git
+git.url             https://github.com/ain/libsnailio.git
+git.branch          10c6b6bf2260e7cac0d07616e327cc5be83cced4
+
+use_configure       no
