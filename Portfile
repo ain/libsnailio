@@ -10,7 +10,7 @@ platforms           darwin
 license             GPL-3
 maintainers         flashbit.net:ain
 description         Snail.io
-long_description    Snail.io is a library for slowing down I/O system calls on Mac OS X
+long_description    Snail.io is a library for slowing down I/O system calls
 homepage            https://github.com/ain/libsnailio
 master_sites        https://github.com/ain/libsnailio/releases
 checksums           sha256 91e453e3bc533a9559bd7dd43904eef26ff64e51cd32e5f05a91a2fb379840b5 \
