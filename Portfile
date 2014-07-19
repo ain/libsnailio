@@ -15,6 +15,6 @@ homepage            https://github.com/ain/libsnailio
 
 fetch.type          git
 git.url             https://github.com/ain/libsnailio.git
-git.branch          10c6b6bf2260e7cac0d07616e327cc5be83cced4
+git.branch          master
 
 use_configure       no
