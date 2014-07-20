@@ -14,4 +14,4 @@ env DYLD_INSERT_LIBRARIES=/path/to/libsnailio/lib/libsnailio.dylib DYLD_FORCE_FL
 - Paul Guyot ([@pguyot](https://github.com/pguyot))
 
 ## License
-Copyright © 2014 Ain Tohvri. Licensed under GPL.
+Copyright © 2014 Ain Tohvri. Licensed under [GPL!](LICENSE).
