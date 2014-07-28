@@ -3,19 +3,21 @@
  *  v0.0.1
  */
 
-#define SLEEP_TIMESPEC {0, 50000000} // 50ms
+#define SLEEP_TIMESPEC {0, 5000000} // nanoseconds
 #include <string.h>
 #include <time.h>
 #include <sys/types.h>
-#include <sys/uio.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 
 ssize_t
-read(int fildes, void *buf, size_t nbyte) {
+read(int d, void *buf, size_t nbyte) {
   struct timespec s = SLEEP_TIMESPEC;
-  (void) nanosleep(&s, NULL);
-  return (ssize_t) syscall(SYS_read, fildes, buf, nbyte);
+  int r = rand() % 20;
+  if (r > 10) {
+    (void) nanosleep(&s, NULL);
+  }
+  return (ssize_t) syscall(SYS_read, d, buf, nbyte);
 }
 
 ssize_t
